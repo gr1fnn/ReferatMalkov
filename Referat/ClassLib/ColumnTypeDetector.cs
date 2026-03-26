@@ -65,37 +65,88 @@ namespace ClassLib
         /// </summary>
         private int AutoDetectTargetColumn(string[] columnNames, List<string[]> dataRows)
         {
-            // Приоритет: числовые колонки с высоким количеством уникальных значений
-            // и названиями, указывающими на целевую переменную
+            // Приоритет: ищем колонки, которые НЕ являются ID, и имеют осмысленные названия
 
-            var targetKeywords = new[] { "price", "target", "class", "label", "value", "cost", "rating", "century", "disease", "deaths", "cases" };
+            var targetKeywords = new[] { "price", "target", "class", "label", "value", "cost", "rating", "century", "disease", "deaths", "cases", "estimated_cases" };
+            var idKeywords = new[] { "id", "name", "code", "number", "patient", "record" };
 
-            // Сначала ищем по названию
+            // Стратегия 1: Ищем по названию, исключая ID-колонки
             for (int i = 0; i < columnNames.Length; i++)
             {
                 string nameLower = columnNames[i].ToLower();
+
+                // Пропускаем ID-колонки
+                if (idKeywords.Any(k => nameLower.Contains(k)))
+                    continue;
+
+                // Если название подходит под целевую переменную
                 if (targetKeywords.Any(k => nameLower.Contains(k)) && IsNumericColumn(dataRows, i))
                 {
                     return i;
                 }
             }
 
-            // Затем ищем числовую колонку с наибольшим количеством уникальных значений
-            int bestCandidate = columnNames.Length - 1;
+            // Стратегия 2: Ищем числовую колонку с наибольшим количеством уникальных значений,
+            // но исключаем явные ID-колонки
+            int bestCandidate = -1;
             int maxUniqueValues = 0;
 
             for (int i = 0; i < columnNames.Length; i++)
             {
+                string nameLower = columnNames[i].ToLower();
+
+                // Пропускаем ID-колонки по названию
+                if (idKeywords.Any(k => nameLower.Contains(k)))
+                    continue;
+
                 var uniqueValues = GetUniqueValues(dataRows, i);
-                // Целевая переменная обычно имеет много уникальных значений
-                if (uniqueValues.Count > maxUniqueValues && IsNumericColumn(dataRows, i))
+
+                // Целевая переменная обычно имеет много уникальных значений, но не должна быть ID
+                if (uniqueValues.Count > maxUniqueValues && IsNumericColumn(dataRows, i) && uniqueValues.Count < dataRows.Count)
                 {
                     maxUniqueValues = uniqueValues.Count;
                     bestCandidate = i;
                 }
             }
 
-            return bestCandidate;
+            // Стратегия 3: Если не нашли подходящую, ищем первую числовую колонку, не являющуюся ID
+            if (bestCandidate == -1)
+            {
+                for (int i = 0; i < columnNames.Length; i++)
+                {
+                    string nameLower = columnNames[i].ToLower();
+                    if (!idKeywords.Any(k => nameLower.Contains(k)) && IsNumericColumn(dataRows, i))
+                    {
+                        bestCandidate = i;
+                        break;
+                    }
+                }
+            }
+
+            // Стратегия 4: По умолчанию последняя колонка, если она не ID
+            if (bestCandidate == -1)
+            {
+                string lastNameLower = columnNames[columnNames.Length - 1].ToLower();
+                if (!idKeywords.Any(k => lastNameLower.Contains(k)))
+                {
+                    bestCandidate = columnNames.Length - 1;
+                }
+                else
+                {
+                    // Если последняя колонка ID, ищем первую не-ID колонку
+                    for (int i = 0; i < columnNames.Length; i++)
+                    {
+                        string nameLower = columnNames[i].ToLower();
+                        if (!idKeywords.Any(k => nameLower.Contains(k)))
+                        {
+                            bestCandidate = i;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            return bestCandidate >= 0 ? bestCandidate : columnNames.Length - 1;
         }
 
         /// <summary>
@@ -152,12 +203,24 @@ namespace ClassLib
             string nameLower = columnName.ToLower();
 
             // 1. Проверка на ID-колонку (уникальные идентификаторы)
+            // Усиленная проверка для Patient_ID, ID, и т.д.
             bool isIdByName = nameLower.Contains("id") ||
-                              nameLower.Contains("name") && !nameLower.Contains("pathogen") ||
-                              nameLower == "event_name" ||
-                              nameLower == "car_name";
+                              nameLower.Contains("patient") && nameLower.Contains("id") ||
+                              nameLower == "patient_id" ||
+                              nameLower == "record_id" ||
+                              nameLower.Contains("code") && analysis.UniqueRatio > 0.8;
 
             bool isHighUniqueness = analysis.UniqueRatio > 0.7 && analysis.UniqueValuesCount > totalRows * 0.6;
+
+            // Если колонка называется "Patient_ID" или содержит "id", и при этом имеет высокую уникальность
+            if ((nameLower == "patient_id" || nameLower.Contains("_id")) && analysis.UniqueRatio > 0.5)
+            {
+                analysis.IsLikelyId = true;
+                analysis.IsCategorical = false;
+                analysis.IsNumeric = false;
+                analysis.SuggestedType = "ID/Уникальный идентификатор";
+                return;
+            }
 
             analysis.IsLikelyId = isIdByName && isHighUniqueness || analysis.UniqueRatio > 0.85;
 
@@ -277,7 +340,7 @@ namespace ClassLib
         }
 
         /// <summary>
-        /// Проверка, является ли колонка числовой
+        /// Проверка, является ли колонка числовой (и не ID)
         /// </summary>
         private bool IsNumericColumn(List<string[]> dataRows, int columnIndex)
         {

@@ -192,7 +192,7 @@ namespace MyForm
             {
                 if (ProcessedData == null || ProcessedData.Count == 0)
                 {
-                    MessageBox.Show("Сначала загрузите файл с данными!", "Предупреждение",ы
+                    MessageBox.Show("Сначала загрузите файл с данными!", "Предупреждение",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
