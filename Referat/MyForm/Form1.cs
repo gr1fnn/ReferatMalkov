@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using ClassLib;
 
 namespace MyForm
@@ -14,15 +16,20 @@ namespace MyForm
         private string CurrentFilePath;
         private string[] ColumnNames;
         private List<string[]> RawData;
-        private List<DataPoint> ProcessedData;
+        private List<ClassLib.DataPoint> ProcessedData;
         private ColumnTypeDetector.ColumnTypeResult ColumnTypeInfo;
         private ColumnTypeDetector TypeDetector;
+
+        // Хранение последних результатов для графиков
+        private List<FullEncodingResult> allFullResults;
+        private FullEncodingResult currentDisplayResult;
 
         public Form1()
         {
             InitializeComponent();
             InitializeDataGridView();
             InitializeTextBox();
+            InitializeChart();
 
             TypeDetector = new ColumnTypeDetector();
         }
@@ -54,6 +61,30 @@ namespace MyForm
             }
         }
 
+        private void InitializeChart()
+        {
+            if (chartMetrics != null)
+            {
+                chartMetrics.ChartAreas.Clear();
+                var chartArea = new ChartArea("MainArea");
+                chartArea.AxisX.Title = "Категориальные признаки";
+                chartArea.AxisX.Interval = 1;
+                chartArea.AxisX.MajorGrid.Enabled = false;
+                chartArea.AxisY.Title = "Качество кодирования (%)";
+                chartArea.AxisY.Minimum = 0;
+                chartArea.AxisY.Maximum = 100;
+                chartMetrics.ChartAreas.Add(chartArea);
+
+                chartMetrics.Legends.Clear();
+                var legend = new Legend("Legend");
+                legend.Docking = Docking.Top;
+                chartMetrics.Legends.Add(legend);
+
+                chartMetrics.Titles.Clear();
+                chartMetrics.Titles.Add("Сравнение категориальных признаков");
+            }
+        }
+
         private void ChoseDataSetButton_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
@@ -75,7 +106,6 @@ namespace MyForm
             {
                 CurrentFilePath = filePath;
 
-                // Загружаем данные
                 RawData = LoadCSV(filePath);
 
                 if (RawData == null || RawData.Count == 0)
@@ -83,20 +113,14 @@ namespace MyForm
                     throw new Exception("Файл не содержит данных");
                 }
 
-                // Получаем названия колонок
                 ColumnNames = RawData[0];
-
-                // Удаляем заголовок из данных
                 var dataRows = RawData.Skip(1).ToList();
 
-                // Определяем типы колонок с помощью отдельного класса
                 ColumnTypeInfo = TypeDetector.DetectColumnTypes(ColumnNames, dataRows);
 
-                // Конвертируем в DataTable для отображения
                 var table = ConvertToDataTable(dataRows, ColumnNames);
                 dataGridView1.DataSource = table;
 
-                // Конвертируем данные в формат DataPoint для обработки
                 ProcessedData = TypeDetector.ConvertToDataPoints(ColumnTypeInfo);
 
             }
@@ -186,7 +210,7 @@ namespace MyForm
             return table;
         }
 
-        private void runButton_Click(object sender, EventArgs e)
+        private async void runButton_Click(object sender, EventArgs e)
         {
             try
             {
@@ -198,16 +222,14 @@ namespace MyForm
                 }
 
                 textBox1.Clear();
+                if (chartMetrics != null) chartMetrics.Series.Clear();
 
                 var resultBuilder = new StringBuilder();
 
                 resultBuilder.AppendLine($"Датасет: {Path.GetFileName(CurrentFilePath)}");
                 resultBuilder.AppendLine($"Количество записей: {ProcessedData.Count}");
-                resultBuilder.AppendLine($"Количество категориальных признаков: {ProcessedData[0].Categories.Length}");
-                resultBuilder.AppendLine($"Количество уникальных категорий: {GetUniqueCategoriesCount()}");
                 resultBuilder.AppendLine();
 
-                // Список категориальных признаков
                 resultBuilder.AppendLine("Категориальные признаки:");
                 for (int i = 0; i < ColumnTypeInfo.CategoricalColumnIndices.Count; i++)
                 {
@@ -215,67 +237,114 @@ namespace MyForm
                 }
                 resultBuilder.AppendLine();
                 resultBuilder.AppendLine($"Целевая переменная: {ColumnNames[ColumnTypeInfo.TargetColumnIndex]}");
+                resultBuilder.AppendLine(new string('=', 80));
                 resultBuilder.AppendLine();
 
-
-                // Инициализация всех кодировщиков
-                var encoders = new ICategoricalEncoder[]
+                // Получаем данные по колонкам
+                var categoricalColumns = new List<(string Name, List<string> Values)>();
+                for (int i = 0; i < ColumnTypeInfo.CategoricalColumnIndices.Count; i++)
                 {
-            new OneHotEncoder(),
-            new IntegerEncoder(),
-            new EntropyEncoder(),
-            new TargetEncoder(),
-            new CatBoostEncoder()
+                    int colIndex = ColumnTypeInfo.CategoricalColumnIndices[i];
+                    var values = new List<string>();
+                    foreach (var row in ColumnTypeInfo.RawData)
+                    {
+                        if (colIndex < row.Length)
+                            values.Add(row[colIndex]?.Trim() ?? "");
+                        else
+                            values.Add("");
+                    }
+                    categoricalColumns.Add((ColumnNames[colIndex], values));
+                }
+
+                // Получаем целевые значения
+                var targetValues = new List<double>();
+                foreach (var row in ColumnTypeInfo.RawData)
+                {
+                    string targetStr = ColumnTypeInfo.TargetColumnIndex < row.Length ? row[ColumnTypeInfo.TargetColumnIndex] : "0";
+                    if (double.TryParse(targetStr, System.Globalization.NumberStyles.Any,
+                        System.Globalization.CultureInfo.InvariantCulture, out double val))
+                        targetValues.Add(val);
+                    else
+                        targetValues.Add(0);
+                }
+
+                // Инициализация кодировщиков для столбцов
+                var columnEncoders = new IColumnEncoder[]
+                {
+                    new ColumnIntegerEncoder(),
+                    new ColumnOneHotEncoder(),
+                    new ColumnEntropyEncoder(),      
+                    new ColumnTargetEncoder(),
+                    new ColumnCatBoostEncoder()
                 };
 
-                var results = new List<EncodingResult>();
+                var allResults = new List<FullEncodingResult>();
 
-                // Заголовки таблицы
-                resultBuilder.AppendLine("Метод                Размерность  Качество    Время(мс)  Потеря инф.");
+                resultBuilder.AppendLine($"{"Метод",-20} {"Ср.Кач",8} {"Ср.Корр",8} {"Ср.Спирм",8} {"Ср.MI",8} {"Ср.R²",8}");
+                resultBuilder.AppendLine(new string('-', 65));
 
-                foreach (var encoder in encoders)
+                foreach (var encoder in columnEncoders)
                 {
                     textBox1.Text = resultBuilder.ToString();
                     Application.DoEvents();
 
-                    var result = encoder.EncodeAndEvaluate(ProcessedData);
-                    results.Add(result);
+                    var fullResult = new FullEncodingResult
+                    {
+                        MethodName = encoder.Name
+                    };
 
-                    resultBuilder.AppendLine($"{result.MethodName,-20} {result.Dimensionality,10}   {result.QualityScore,7:F2}%   {result.EncodingTime,8:F0}     {result.InformationLoss,8:F2}%");
+                    var stopwatch = System.Diagnostics.Stopwatch.StartNew();
+
+                    foreach (var column in categoricalColumns)
+                    {
+                        var colResult = encoder.EncodeColumn(column.Name, column.Values, targetValues);
+                        fullResult.ColumnResults.Add(colResult);
+                    }
+
+                    stopwatch.Stop();
+                    fullResult.TotalTime = stopwatch.ElapsedMilliseconds;
+                    allResults.Add(fullResult);
+
+                    resultBuilder.AppendLine($"{encoder.Name,-20} {fullResult.AvgQuality,7:F1}% {fullResult.AvgCorrelation,7:F3} {fullResult.AvgSpearman,7:F3} {fullResult.AvgMutualInfo,7:F3} {fullResult.AvgR2,7:F3}");
                 }
 
+                resultBuilder.AppendLine();
+                resultBuilder.AppendLine(new string('=', 80));
+                resultBuilder.AppendLine();
 
-
-                foreach (var result in results)
+                foreach (var fullResult in allResults)
                 {
-                    resultBuilder.AppendLine(result.MethodName);
-                    resultBuilder.AppendLine($"  Размерность: {result.Dimensionality}");
-                    resultBuilder.AppendLine($"  Качество кодирования: {result.QualityScore:F2}%");
-                    resultBuilder.AppendLine($"  Время кодирования: {result.EncodingTime:F0} мс");
-                    resultBuilder.AppendLine($"  Потеря информации: {result.InformationLoss:F2}%");
+                    resultBuilder.AppendLine($" {fullResult.MethodName}");
+                    resultBuilder.AppendLine($"   Общее время: {fullResult.TotalTime} мс");
+                    resultBuilder.AppendLine($"   Среднее качество: {fullResult.AvgQuality:F1}%");
+                    resultBuilder.AppendLine();
+                    resultBuilder.AppendLine($"   {"Признак",-25} {"Кач",6} {"Пирсон",8} {"Спирмен",8} {"MI",8} {"R²",8} {"Разм",6} {"Уник",6}");
+                    resultBuilder.AppendLine($"   {new string('-', 85)}");
 
-                    if (result.Metrics != null && result.Metrics.Count > 0)
+                    foreach (var colResult in fullResult.ColumnResults.OrderByDescending(r => r.OverallQuality))
                     {
-                        resultBuilder.AppendLine("  Метрики качества:");
-
-                        foreach (var metric in result.Metrics)
-                        {
-                            string metricName = metric.Key switch
-                            {
-                                "Correlation" => "    Корреляция Пирсона",
-                                "SpearmanCorr" => "    Корреляция Спирмена",
-                                "MutualInfo" => "    Взаимная информация",
-                                "R2_Score" => "    R² (коэф. детерминации)",
-                                _ => $"    {metric.Key}"
-                            };
-
-                            resultBuilder.AppendLine($"{metricName}: {metric.Value:F4}");
-                        }
+                        resultBuilder.AppendLine($"   {colResult.ColumnName,-25} {colResult.OverallQuality,5:F1}% {colResult.Correlation,7:F3} {colResult.SpearmanCorrelation,7:F3} {colResult.MutualInformation,7:F3} {colResult.R2Score,7:F3} {colResult.Dimensionality,5} {colResult.UniqueValuesCount,5}");
                     }
+                    resultBuilder.AppendLine();
+
+                    if (fullResult.BestFeature != null)
+                    {
+                        resultBuilder.AppendLine($"    Лучший признак: {fullResult.BestFeature.ColumnName} (качество {fullResult.BestFeature.OverallQuality:F1}%)");
+                    }
+                    if (fullResult.WorstFeature != null)
+                    {
+                        resultBuilder.AppendLine($"    Худший признак: {fullResult.WorstFeature.ColumnName} (качество {fullResult.WorstFeature.OverallQuality:F1}%)");
+                    }
+                    resultBuilder.AppendLine();
+                    resultBuilder.AppendLine(new string('-', 80));
                     resultBuilder.AppendLine();
                 }
 
                 textBox1.Text = resultBuilder.ToString();
+
+                // Сохраняем результаты
+                allFullResults = allResults;
+                currentDisplayResult = allResults.FirstOrDefault();
             }
             catch (Exception ex)
             {
@@ -284,22 +353,194 @@ namespace MyForm
             }
         }
 
-        private int GetUniqueCategoriesCount()
+        /// <summary>
+        /// Создает окно со сравнением всех методов
+        /// </summary>
+        private void ShowMethodsComparisonWindow()
         {
-            if (ProcessedData == null || ProcessedData.Count == 0)
-                return 0;
+            if (allFullResults == null || allFullResults.Count == 0) return;
 
-            var uniqueCategories = new System.Collections.Generic.HashSet<string>();
-
-            foreach (var point in ProcessedData)
+            var chartForm = new Form
             {
-                foreach (var category in point.Categories)
+                Text = "Сравнение методов кодирования",
+                Size = new Size(1000, 600),
+                StartPosition = FormStartPosition.CenterParent,
+                WindowState = FormWindowState.Maximized
+            };
+
+            var chart = CreateMethodsComparisonChart();
+            chart.Dock = DockStyle.Fill;
+            chartForm.Controls.Add(chart);
+
+            // Добавляем кнопку сохранения
+            var saveButton = new Button
+            {
+                Text = "Сохранить как изображение",
+                Dock = DockStyle.Bottom,
+                Height = 35
+            };
+            saveButton.Click += (s, e) =>
+            {
+                using (var saveDialog = new SaveFileDialog())
                 {
-                    uniqueCategories.Add(category);
+                    saveDialog.Filter = "PNG Image|*.png|JPEG Image|*.jpg|BMP Image|*.bmp";
+                    saveDialog.Title = "Сохранить график";
+                    if (saveDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        chart.SaveImage(saveDialog.FileName, ChartImageFormat.Png);
+                        MessageBox.Show("График сохранен!", "Успех",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
+            };
+            chartForm.Controls.Add(saveButton);
+
+            chartForm.ShowDialog();
+        }
+
+        /// <summary>
+        /// Создает окно с детальными метриками для всех методов
+        /// </summary>
+        private void ShowDetailedMetricsWindow()
+        {
+            if (allFullResults == null || allFullResults.Count == 0) return;
+
+            var chartForm = new Form
+            {
+                Text = "Детальные метрики качества",
+                Size = new Size(1200, 700),
+                StartPosition = FormStartPosition.CenterParent,
+                WindowState = FormWindowState.Maximized
+            };
+
+            var chart = new Chart
+            {
+                Dock = DockStyle.Fill
+            };
+            chart.ChartAreas.Add(new ChartArea());
+
+            string[] metricNames = { "AvgCorrelation", "AvgSpearman", "AvgMutualInfo", "AvgR2" };
+            string[] metricTitles = { "Корреляция Пирсона", "Корреляция Спирмена",
+                                      "Взаимная информация", "R² (коэф. детерминации)" };
+
+            for (int m = 0; m < metricNames.Length; m++)
+            {
+                var series = new Series
+                {
+                    Name = metricTitles[m],
+                    ChartType = SeriesChartType.Column,
+                    IsValueShownAsLabel = true,
+                    LabelFormat = "F3"
+                };
+
+                foreach (var result in allFullResults)
+                {
+                    double value = metricNames[m] switch
+                    {
+                        "AvgCorrelation" => result.AvgCorrelation,
+                        "AvgSpearman" => result.AvgSpearman,
+                        "AvgMutualInfo" => result.AvgMutualInfo,
+                        "AvgR2" => result.AvgR2,
+                        _ => 0
+                    };
+                    series.Points.AddXY(result.MethodName, value);
+                }
+                chart.Series.Add(series);
             }
 
-            return uniqueCategories.Count;
+            chart.ChartAreas[0].AxisX.Title = "Методы кодирования";
+            chart.ChartAreas[0].AxisX.Interval = 1;
+            chart.ChartAreas[0].AxisY.Title = "Значение метрики";
+            chart.ChartAreas[0].AxisY.Minimum = -0.1;
+            chart.ChartAreas[0].AxisY.Maximum = 1.1;
+
+            chart.Titles.Clear();
+            chart.Titles.Add("Сравнение метрик качества по методам кодирования");
+
+            chartForm.Controls.Add(chart);
+            chartForm.ShowDialog();
+        }
+
+
+        private Chart CreateMethodsComparisonChart()
+        {
+            var chart = new Chart();
+            chart.ChartAreas.Add(new ChartArea());
+
+            var qualitySeries = new Series
+            {
+                Name = "Среднее качество кодирования (%)",
+                ChartType = SeriesChartType.Column,
+                IsValueShownAsLabel = true,
+                LabelFormat = "F1"
+            };
+
+            foreach (var result in allFullResults)
+            {
+                qualitySeries.Points.AddXY(result.MethodName, result.AvgQuality);
+            }
+            chart.Series.Add(qualitySeries);
+
+            var timeSeries = new Series
+            {
+                Name = "Время выполнения (мс)",
+                ChartType = SeriesChartType.Line,
+                MarkerStyle = MarkerStyle.Circle,
+                MarkerSize = 8,
+                BorderWidth = 2
+            };
+
+            foreach (var result in allFullResults)
+            {
+                timeSeries.Points.AddXY(result.MethodName, result.TotalTime);
+            }
+            chart.Series.Add(timeSeries);
+
+            chart.ChartAreas[0].AxisY2.Enabled = AxisEnabled.True;
+            chart.ChartAreas[0].AxisY2.Title = "Время (мс)";
+            timeSeries.YAxisType = AxisType.Secondary;
+
+            chart.ChartAreas[0].AxisX.Title = "Методы кодирования";
+            chart.ChartAreas[0].AxisX.Interval = 1;
+            chart.ChartAreas[0].AxisY.Title = "Качество (%)";
+            chart.ChartAreas[0].AxisY.Minimum = 0;
+            chart.ChartAreas[0].AxisY.Maximum = 100;
+
+            chart.Titles.Clear();
+            chart.Titles.Add("Сравнение методов категориального кодирования");
+
+            return chart;
+        }
+
+        private double NormalizeTimeForRadar(double time)
+        {
+            double maxTime = allFullResults.Max(r => r.TotalTime);
+            if (maxTime == 0) return 100;
+            return 100 * (1 - time / maxTime);
+        }
+
+
+
+        private void btnShowMethodsChart_Click(object sender, EventArgs e)
+        {
+            if (allFullResults == null || allFullResults.Count == 0)
+            {
+                MessageBox.Show("Сначала выполните анализ (кнопка Запустить анализ)",
+                    "Нет данных", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            ShowMethodsComparisonWindow();
+        }
+
+        private void btnShowDetailedMetrics_Click(object sender, EventArgs e)
+        {
+            if (allFullResults == null || allFullResults.Count == 0)
+            {
+                MessageBox.Show("Сначала выполните анализ (кнопка Запустить анализ)",
+                    "Нет данных", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            ShowDetailedMetricsWindow();
         }
     }
 }

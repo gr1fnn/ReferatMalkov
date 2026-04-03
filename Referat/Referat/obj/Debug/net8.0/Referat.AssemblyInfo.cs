@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Referat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5a2e754cbe66445609f4950da2fa3f84a4d57a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da8e1f2a9a688358eee01f6e5bb73f7e14dbf729")]
 [assembly: System.Reflection.AssemblyProductAttribute("Referat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Referat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

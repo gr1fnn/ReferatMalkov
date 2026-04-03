@@ -2,15 +2,8 @@
 {
     partial class Form1
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,35 +13,35 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
             ChoseDataSetButton = new Button();
             runButton = new Button();
             textBox1 = new TextBox();
+            btnShowMethodsChart = new Button();
+            btnShowDetailedMetrics = new Button();
+            panelButtons = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panelButtons.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(333, 12);
+            dataGridView1.Location = new Point(340, 12);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(772, 294);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(982, 250);
             dataGridView1.TabIndex = 0;
             // 
             // ChoseDataSetButton
             // 
-            ChoseDataSetButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            ChoseDataSetButton.Location = new Point(38, 12);
+            ChoseDataSetButton.Font = new Font("Segoe UI", 12F);
+            ChoseDataSetButton.Location = new Point(15, 12);
             ChoseDataSetButton.Name = "ChoseDataSetButton";
-            ChoseDataSetButton.Size = new Size(260, 64);
+            ChoseDataSetButton.Size = new Size(310, 45);
             ChoseDataSetButton.TabIndex = 1;
             ChoseDataSetButton.Text = "Выберите датасет";
             ChoseDataSetButton.UseVisualStyleBackColor = true;
@@ -56,45 +49,83 @@
             // 
             // runButton
             // 
-            runButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            runButton.Location = new Point(38, 109);
+            runButton.Font = new Font("Segoe UI", 12F);
+            runButton.Location = new Point(15, 65);
             runButton.Name = "runButton";
-            runButton.Size = new Size(260, 64);
+            runButton.Size = new Size(310, 45);
             runButton.TabIndex = 2;
-            runButton.Text = "Запустить преобразование";
+            runButton.Text = "Запустить анализ";
             runButton.UseVisualStyleBackColor = true;
             runButton.Click += runButton_Click;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(333, 331);
+            textBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBox1.Location = new Point(340, 280);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(772, 260);
+            textBox1.ScrollBars = ScrollBars.Vertical;
+            textBox1.Size = new Size(982, 388);
             textBox1.TabIndex = 3;
+            // 
+            // btnShowMethodsChart
+            // 
+            btnShowMethodsChart.Font = new Font("Segoe UI", 10F);
+            btnShowMethodsChart.Location = new Point(17, 116);
+            btnShowMethodsChart.Name = "btnShowMethodsChart";
+            btnShowMethodsChart.Size = new Size(310, 108);
+            btnShowMethodsChart.TabIndex = 6;
+            btnShowMethodsChart.Text = "Сравнение методов (отдельное окно)";
+            btnShowMethodsChart.UseVisualStyleBackColor = true;
+            btnShowMethodsChart.Click += btnShowMethodsChart_Click;
+            // 
+            // btnShowDetailedMetrics
+            // 
+            btnShowDetailedMetrics.Font = new Font("Segoe UI", 10F);
+            btnShowDetailedMetrics.Location = new Point(12, 230);
+            btnShowDetailedMetrics.Name = "btnShowDetailedMetrics";
+            btnShowDetailedMetrics.Size = new Size(310, 100);
+            btnShowDetailedMetrics.TabIndex = 7;
+            btnShowDetailedMetrics.Text = "Детальные метрики (отдельное окно)";
+            btnShowDetailedMetrics.UseVisualStyleBackColor = true;
+            btnShowDetailedMetrics.Click += btnShowDetailedMetrics_Click;
+            // 
+            // panelButtons
+            // 
+            panelButtons.Controls.Add(ChoseDataSetButton);
+            panelButtons.Controls.Add(runButton);
+            panelButtons.Controls.Add(btnShowMethodsChart);
+            panelButtons.Controls.Add(btnShowDetailedMetrics);
+            panelButtons.Dock = DockStyle.Left;
+            panelButtons.Location = new Point(0, 0);
+            panelButtons.Name = "panelButtons";
+            panelButtons.Size = new Size(330, 680);
+            panelButtons.TabIndex = 10;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 255, 192);
-            ClientSize = new Size(1117, 618);
+            ClientSize = new Size(1334, 680);
+            Controls.Add(panelButtons);
             Controls.Add(textBox1);
-            Controls.Add(runButton);
-            Controls.Add(ChoseDataSetButton);
             Controls.Add(dataGridView1);
             Name = "Form1";
-            Text = "MyForm";
+            Text = "Анализ методов категориального кодирования";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panelButtons.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
-
-        #endregion
 
         private DataGridView dataGridView1;
         private Button ChoseDataSetButton;
         private Button runButton;
         private TextBox textBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartMetrics;
+        private Button btnShowMethodsChart;
+        private Button btnShowDetailedMetrics;
+        private Panel panelButtons;
     }
 }

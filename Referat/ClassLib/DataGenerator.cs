@@ -10,28 +10,6 @@ namespace ClassLib
     {
         private Random random = new Random(42);
 
-        public List<DataPoint> GenerateHighDimensionalData(int numSamples, int numFeatures)
-        {
-            var data = new List<DataPoint>();
-
-            for (int i = 0; i < numSamples; i++)
-            {
-                var categories = new string[numFeatures];
-                for (int j = 0; j < numFeatures; j++)
-                {
-                    // Генерируем категории с разной частотой встречаемости
-                    int numCategories = random.Next(10, 100);
-                    int categoryIndex = random.Next(numCategories);
-                    categories[j] = $"cat_{j}_{categoryIndex}";
-                }
-
-                // Целевая переменная с семантической связью с категориями
-                double target = CalculateTargetWithSemantics(categories);
-                data.Add(new DataPoint(categories, target));
-            }
-
-            return data;
-        }
 
         private double CalculateTargetWithSemantics(string[] categories)
         {
