@@ -1,105 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\",
+  "WorkspaceRootPath": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\myform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|solutionrelative:myform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\myform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\myform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|solutionrelative:myform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\catboostencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\catboostencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\classlib\\regressionevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\regressionevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\baseencoder .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\baseencoder .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\classlib\\knnregression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\knnregression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\onehotencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\onehotencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\entropyencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\entropyencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\encodingresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\encodingresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\encodingqualityevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\encodingqualityevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\datapoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\classlib\\datapoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\datapoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\datagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\columnencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columnencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\columnonehotencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columnonehotencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\columntargetencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columntargetencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\columnintegerencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columnintegerencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\columnentropyencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columnentropyencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\columncatboostencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columncatboostencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\columntypedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\classlib\\columntypedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columntypedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\myform\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\classlib\\columntargetencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columntargetencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\classlib\\columnonehotencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columnonehotencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\classlib\\columnintegerencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columnintegerencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\classlib\\columnentropyencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columnentropyencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\classlib\\columnencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columnencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\classlib\\columncatboostencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\columncatboostencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\myform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|solutionrelative:myform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\myform\\myform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|solutionrelative:myform\\myform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\myform\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|solutionrelative:myform\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\targetencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\targetencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\integerencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\integerencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\classlib\\icategoricalencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E43580-D9B6-4926-AA8B-177A0E3F3134}|ClassLib\\ClassLib.csproj|solutionrelative:classlib\\icategoricalencoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2155CB67-F82E-48AF-92A6-57E8227ACA46}|My tests\\My tests.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\my tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2155CB67-F82E-48AF-92A6-57E8227ACA46}|My tests\\My tests.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\my tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2155CB67-F82E-48AF-92A6-57E8227ACA46}|My tests\\My tests.csproj|solutionrelative:my tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF0CBBCE-6E19-4F0D-B92F-36D1941BF1BD}|Referat\\Referat.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\referat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF0CBBCE-6E19-4F0D-B92F-36D1941BF1BD}|Referat\\Referat.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\referat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF0CBBCE-6E19-4F0D-B92F-36D1941BF1BD}|Referat\\Referat.csproj|solutionrelative:referat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|c:\\users\\grish\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0430\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\referatmalkov\\referat\\myform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|c:\\users\\grish\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043C\u0430\u043B\u044C\u043A\u043E\u0432 \u0430\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\referatmalkov\\referat\\myform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBB51ED5-77E9-480A-BEFD-56FC97DAB5D7}|MyForm\\MyForm.csproj|solutionrelative:myform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -110,93 +78,146 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\MyForm\\Form1.cs",
+              "RelativeDocumentMoniker": "MyForm\\Form1.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\MyForm\\Form1.cs",
+              "RelativeToolTip": "MyForm\\Form1.cs",
+              "ViewState": "AgIAAL8BAAAAAAAAAAAgwOYBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T16:14:00.517Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KNNRegression.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\KNNRegression.cs",
+              "RelativeDocumentMoniker": "ClassLib\\KNNRegression.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\KNNRegression.cs",
+              "RelativeToolTip": "ClassLib\\KNNRegression.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwGgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T21:52:44.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegressionEvaluator.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\RegressionEvaluator.cs",
+              "RelativeDocumentMoniker": "ClassLib\\RegressionEvaluator.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\RegressionEvaluator.cs",
+              "RelativeToolTip": "ClassLib\\RegressionEvaluator.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAwwHcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T21:52:39.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MyForm",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\MyForm\\MyForm.csproj",
+              "RelativeDocumentMoniker": "MyForm\\MyForm.csproj",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\MyForm\\MyForm.csproj",
+              "RelativeToolTip": "MyForm\\MyForm.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-05T14:41:17.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ColumnEncoder.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnEncoder.cs",
+              "RelativeDocumentMoniker": "ClassLib\\ColumnEncoder.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnEncoder.cs",
+              "RelativeToolTip": "ClassLib\\ColumnEncoder.cs",
+              "ViewState": "AgIAAEEBAAAAAAAAAAAowGgBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T14:30:47.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ColumnEntropyEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnEntropyEncoder.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnEntropyEncoder.cs",
               "RelativeDocumentMoniker": "ClassLib\\ColumnEntropyEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnEntropyEncoder.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnEntropyEncoder.cs",
               "RelativeToolTip": "ClassLib\\ColumnEntropyEncoder.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwCkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwCkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-01T07:06:58.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
               "Title": "ColumnCatBoostEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnCatBoostEncoder.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnCatBoostEncoder.cs",
               "RelativeDocumentMoniker": "ClassLib\\ColumnCatBoostEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnCatBoostEncoder.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnCatBoostEncoder.cs",
               "RelativeToolTip": "ClassLib\\ColumnCatBoostEncoder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowEUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-01T06:49:01.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "ColumnTargetEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnTargetEncoder.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnTargetEncoder.cs",
               "RelativeDocumentMoniker": "ClassLib\\ColumnTargetEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnTargetEncoder.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnTargetEncoder.cs",
               "RelativeToolTip": "ClassLib\\ColumnTargetEncoder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-01T06:48:49.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
               "Title": "ColumnOneHotEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnOneHotEncoder.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnOneHotEncoder.cs",
               "RelativeDocumentMoniker": "ClassLib\\ColumnOneHotEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnOneHotEncoder.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnOneHotEncoder.cs",
               "RelativeToolTip": "ClassLib\\ColumnOneHotEncoder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-01T06:48:35.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 7,
               "Title": "ColumnIntegerEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnIntegerEncoder.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnIntegerEncoder.cs",
               "RelativeDocumentMoniker": "ClassLib\\ColumnIntegerEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnIntegerEncoder.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnIntegerEncoder.cs",
               "RelativeToolTip": "ClassLib\\ColumnIntegerEncoder.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAUwB8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-01T06:48:07.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ColumnEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnEncoder.cs",
-              "RelativeDocumentMoniker": "ClassLib\\ColumnEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnEncoder.cs",
-              "RelativeToolTip": "ClassLib\\ColumnEncoder.cs",
-              "ViewState": "AgIAACsBAAAAAAAAAAAiwDwBAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T06:47:02.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 14,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\My tests\\UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\My tests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "My tests\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\My tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\My tests\\UnitTest1.cs",
               "RelativeToolTip": "My tests\\UnitTest1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAKgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -204,24 +225,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 13,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\MyForm\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\MyForm\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "MyForm\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\MyForm\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\MyForm\\Form1.Designer.cs",
               "RelativeToolTip": "MyForm\\Form1.Designer.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAqwIIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAqwJAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T19:49:09.264Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\MyForm\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\MyForm\\Program.cs",
               "RelativeDocumentMoniker": "MyForm\\Program.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\MyForm\\Program.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\MyForm\\Program.cs",
               "RelativeToolTip": "MyForm\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -229,193 +250,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BaseEncoder .cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\BaseEncoder .cs",
-              "RelativeDocumentMoniker": "ClassLib\\BaseEncoder .cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\BaseEncoder .cs",
-              "RelativeToolTip": "ClassLib\\BaseEncoder .cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T20:12:33.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EncodingQualityEvaluator.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\EncodingQualityEvaluator.cs",
-              "RelativeDocumentMoniker": "ClassLib\\EncodingQualityEvaluator.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\EncodingQualityEvaluator.cs",
-              "RelativeToolTip": "ClassLib\\EncodingQualityEvaluator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T20:12:08.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 4,
               "Title": "ColumnTypeDetector.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnTypeDetector.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnTypeDetector.cs",
               "RelativeDocumentMoniker": "ClassLib\\ColumnTypeDetector.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ColumnTypeDetector.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\ColumnTypeDetector.cs",
               "RelativeToolTip": "ClassLib\\ColumnTypeDetector.cs",
-              "ViewState": "AgIAAJABAAAAAAAAAAAUwKUBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAH0BAAAAAAAAAAAwwKUBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T20:32:17.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DataLoader.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\DataLoader.cs",
-              "RelativeDocumentMoniker": "ClassLib\\DataLoader.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\DataLoader.cs",
-              "RelativeToolTip": "ClassLib\\DataLoader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T16:17:30.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\MyForm\\Form1.cs",
-              "RelativeDocumentMoniker": "MyForm\\Form1.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\MyForm\\Form1.cs",
-              "RelativeToolTip": "MyForm\\Form1.cs",
-              "ViewState": "AgIAAEwBAAAAAAAAAAAAAM4BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T16:14:00.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CatBoostEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\CatBoostEncoder.cs",
-              "RelativeDocumentMoniker": "ClassLib\\CatBoostEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\CatBoostEncoder.cs",
-              "RelativeToolTip": "ClassLib\\CatBoostEncoder.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwCsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T13:51:21.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "TargetEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\TargetEncoder.cs",
-              "RelativeDocumentMoniker": "ClassLib\\TargetEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\TargetEncoder.cs",
-              "RelativeToolTip": "ClassLib\\TargetEncoder.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAADwvzUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T13:50:35.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EntropyEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\EntropyEncoder.cs",
-              "RelativeDocumentMoniker": "ClassLib\\EntropyEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\EntropyEncoder.cs",
-              "RelativeToolTip": "ClassLib\\EntropyEncoder.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAADwvwkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T13:50:14.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IntegerEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\IntegerEncoder.cs",
-              "RelativeDocumentMoniker": "ClassLib\\IntegerEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\IntegerEncoder.cs",
-              "RelativeToolTip": "ClassLib\\IntegerEncoder.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAADwvycAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T13:49:56.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OneHotEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\OneHotEncoder.cs",
-              "RelativeDocumentMoniker": "ClassLib\\OneHotEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\OneHotEncoder.cs",
-              "RelativeToolTip": "ClassLib\\OneHotEncoder.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T13:49:41.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DataGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\DataGenerator.cs",
-              "RelativeDocumentMoniker": "ClassLib\\DataGenerator.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\DataGenerator.cs",
-              "RelativeToolTip": "ClassLib\\DataGenerator.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T13:49:07.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "DataPoint.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\DataPoint.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\DataPoint.cs",
               "RelativeDocumentMoniker": "ClassLib\\DataPoint.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\DataPoint.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\ClassLib\\DataPoint.cs",
               "RelativeToolTip": "ClassLib\\DataPoint.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAswA4AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T13:48:30.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EncodingResult.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\EncodingResult.cs",
-              "RelativeDocumentMoniker": "ClassLib\\EncodingResult.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\EncodingResult.cs",
-              "RelativeToolTip": "ClassLib\\EncodingResult.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T13:48:10.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ICategoricalEncoder.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ICategoricalEncoder.cs",
-              "RelativeDocumentMoniker": "ClassLib\\ICategoricalEncoder.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\ClassLib\\ICategoricalEncoder.cs",
-              "RelativeToolTip": "ClassLib\\ICategoricalEncoder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T13:47:09.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\MyForm\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\MyForm\\Form1.cs",
               "RelativeDocumentMoniker": "MyForm\\Form1.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\MyForm\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\MyForm\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "MyForm\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T13:42:36.688Z",
@@ -423,11 +288,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\Referat\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\Referat\\Program.cs",
               "RelativeDocumentMoniker": "Referat\\Program.cs",
-              "ToolTip": "C:\\Users\\grish\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0410\u043D\u0430\u0442\u043E\u043B\u044C\u0435\u0432\u0438\u0447\\ReferatMalkov\\Referat\\Referat\\Program.cs",
+              "ToolTip": "C:\\Users\\grish\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041C\u0430\u043B\u044C\u043A\u043E\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\\ReferatMalkov\\Referat\\Referat\\Program.cs",
               "RelativeToolTip": "Referat\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

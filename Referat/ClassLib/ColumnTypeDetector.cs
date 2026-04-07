@@ -25,7 +25,7 @@ namespace ClassLib
             public double Entropy { get; set; }
             public bool IsLikelyId { get; set; }
             public bool IsNumeric { get; set; }
-            public bool IsOrdinal { get; set; }           // Порядковая переменная
+            public bool IsOrdinal { get; set; }          
             public bool IsCategorical { get; set; }
             public string SuggestedType { get; set; }
         }

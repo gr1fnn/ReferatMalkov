@@ -237,7 +237,6 @@ namespace MyForm
                 }
                 resultBuilder.AppendLine();
                 resultBuilder.AppendLine($"Целевая переменная: {ColumnNames[ColumnTypeInfo.TargetColumnIndex]}");
-                resultBuilder.AppendLine(new string('=', 80));
                 resultBuilder.AppendLine();
 
                 // Получаем данные по колонкам
@@ -273,15 +272,14 @@ namespace MyForm
                 {
                     new ColumnIntegerEncoder(),
                     new ColumnOneHotEncoder(),
-                    new ColumnEntropyEncoder(),      
+                    new ColumnEntropyEncoder(),
                     new ColumnTargetEncoder(),
                     new ColumnCatBoostEncoder()
                 };
 
                 var allResults = new List<FullEncodingResult>();
 
-                resultBuilder.AppendLine($"{"Метод",-20} {"Ср.Кач",8} {"Ср.Корр",8} {"Ср.Спирм",8} {"Ср.MI",8} {"Ср.R²",8}");
-                resultBuilder.AppendLine(new string('-', 65));
+                resultBuilder.AppendLine($"{"Метод",-20} {"Ср.Качество",8} {"Ср.Корр",8} {"Ср.Спирм",8} {"Ср.MI",8} {"Ср.R²",8}");
 
                 foreach (var encoder in columnEncoders)
                 {
@@ -309,7 +307,6 @@ namespace MyForm
                 }
 
                 resultBuilder.AppendLine();
-                resultBuilder.AppendLine(new string('=', 80));
                 resultBuilder.AppendLine();
 
                 foreach (var fullResult in allResults)
@@ -336,8 +333,7 @@ namespace MyForm
                         resultBuilder.AppendLine($"    Худший признак: {fullResult.WorstFeature.ColumnName} (качество {fullResult.WorstFeature.OverallQuality:F1}%)");
                     }
                     resultBuilder.AppendLine();
-                    resultBuilder.AppendLine(new string('-', 80));
-                    resultBuilder.AppendLine();
+
                 }
 
                 textBox1.Text = resultBuilder.ToString();
@@ -413,6 +409,15 @@ namespace MyForm
                 WindowState = FormWindowState.Maximized
             };
 
+            var mainPanel = new TableLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                RowCount = 2,
+                ColumnCount = 1
+            };
+            mainPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 85F));
+            mainPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 15F));
+
             var chart = new Chart
             {
                 Dock = DockStyle.Fill
@@ -421,7 +426,9 @@ namespace MyForm
 
             string[] metricNames = { "AvgCorrelation", "AvgSpearman", "AvgMutualInfo", "AvgR2" };
             string[] metricTitles = { "Корреляция Пирсона", "Корреляция Спирмена",
-                                      "Взаимная информация", "R² (коэф. детерминации)" };
+                              "Взаимная информация", "R² (коэф. детерминации)" };
+
+            Color[] metricColors = { Color.SteelBlue, Color.ForestGreen, Color.DarkOrange, Color.Purple };
 
             for (int m = 0; m < metricNames.Length; m++)
             {
@@ -430,7 +437,8 @@ namespace MyForm
                     Name = metricTitles[m],
                     ChartType = SeriesChartType.Column,
                     IsValueShownAsLabel = true,
-                    LabelFormat = "F3"
+                    LabelFormat = "F3",
+                    Color = metricColors[m]
                 };
 
                 foreach (var result in allFullResults)
@@ -450,17 +458,64 @@ namespace MyForm
 
             chart.ChartAreas[0].AxisX.Title = "Методы кодирования";
             chart.ChartAreas[0].AxisX.Interval = 1;
-            chart.ChartAreas[0].AxisY.Title = "Значение метрики";
+            chart.ChartAreas[0].AxisY.Title = "Значение метрики (0-1)";
             chart.ChartAreas[0].AxisY.Minimum = -0.1;
             chart.ChartAreas[0].AxisY.Maximum = 1.1;
 
             chart.Titles.Clear();
             chart.Titles.Add("Сравнение метрик качества по методам кодирования");
 
-            chartForm.Controls.Add(chart);
+            var legendPanel = new Panel
+            {
+                Dock = DockStyle.Fill,
+                BackColor = Color.FromArgb(240, 240, 240),
+                Padding = new Padding(10)
+            };
+
+            var flowPanel = new FlowLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                FlowDirection = FlowDirection.LeftToRight,
+                WrapContents = true
+            };
+
+            for (int i = 0; i < metricTitles.Length; i++)
+            {
+                var colorPanel = new Panel
+                {
+                    Width = 200,
+                    Height = 30,
+                    Margin = new Padding(5)
+                };
+
+                var colorBox = new Panel
+                {
+                    BackColor = metricColors[i],
+                    Size = new Size(20, 20),
+                    Location = new Point(0, 5)
+                };
+
+                var nameLabel = new Label
+                {
+                    Text = metricTitles[i],
+                    Font = new Font("Segoe UI", 9, FontStyle.Bold),
+                    ForeColor = metricColors[i],
+                    AutoSize = true,
+                    Location = new Point(25, 7)
+                };
+
+                colorPanel.Controls.Add(colorBox);
+                colorPanel.Controls.Add(nameLabel);
+                flowPanel.Controls.Add(colorPanel);
+            }
+
+            legendPanel.Controls.Add(flowPanel);
+            mainPanel.Controls.Add(chart, 0, 0);
+            mainPanel.Controls.Add(legendPanel, 0, 1);
+
+            chartForm.Controls.Add(mainPanel);
             chartForm.ShowDialog();
         }
-
 
         private Chart CreateMethodsComparisonChart()
         {
@@ -512,14 +567,6 @@ namespace MyForm
             return chart;
         }
 
-        private double NormalizeTimeForRadar(double time)
-        {
-            double maxTime = allFullResults.Max(r => r.TotalTime);
-            if (maxTime == 0) return 100;
-            return 100 * (1 - time / maxTime);
-        }
-
-
 
         private void btnShowMethodsChart_Click(object sender, EventArgs e)
         {
@@ -542,5 +589,192 @@ namespace MyForm
             }
             ShowDetailedMetricsWindow();
         }
+
+        private void regresion_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ProcessedData == null || ProcessedData.Count == 0)
+                {
+                    MessageBox.Show("Сначала загрузите файл с данными и выполните анализ!",
+                        "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (allFullResults == null || allFullResults.Count == 0)
+                {
+                    MessageBox.Show("Сначала выполните анализ кодирования (кнопка 'Запустить анализ')!",
+                        "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Получаем категориальные колонки и целевые значения
+                var categoricalColumns = new List<(string Name, List<string> Values)>();
+                for (int i = 0; i < ColumnTypeInfo.CategoricalColumnIndices.Count; i++)
+                {
+                    int colIndex = ColumnTypeInfo.CategoricalColumnIndices[i];
+                    var values = new List<string>();
+                    foreach (var row in ColumnTypeInfo.RawData)
+                    {
+                        if (colIndex < row.Length)
+                            values.Add(row[colIndex]?.Trim() ?? "");
+                        else
+                            values.Add("");
+                    }
+                    categoricalColumns.Add((ColumnNames[colIndex], values));
+                }
+
+                var targetValues = new List<double>();
+                foreach (var row in ColumnTypeInfo.RawData)
+                {
+                    string targetStr = ColumnTypeInfo.TargetColumnIndex < row.Length
+                        ? row[ColumnTypeInfo.TargetColumnIndex] : "0";
+                    if (double.TryParse(targetStr, System.Globalization.NumberStyles.Any,
+                        System.Globalization.CultureInfo.InvariantCulture, out double val))
+                        targetValues.Add(val);
+                    else
+                        targetValues.Add(0);
+                }
+
+                // Спрашиваем пользователя, сколько лучших признаков использовать
+                string input = Microsoft.VisualBasic.Interaction.InputBox(
+                    "Сколько лучших признаков использовать для регрессии?\n\n" +
+                    "Рекомендуемые значения:\n" +
+                    "• 1 - только лучший признак\n" +
+                    "• 3 - топ-3 признака \n" +
+                    "• 0 или пусто - использовать все признаки",
+                    "Параметры регрессии",
+                    "3");
+
+                int? topFeatures = null;
+                if (!string.IsNullOrWhiteSpace(input) && int.TryParse(input, out int top))
+                {
+                    if (top > 0 && top <= categoricalColumns.Count)
+                        topFeatures = top;
+                    else if (top > categoricalColumns.Count)
+                        MessageBox.Show($"Максимум доступно {categoricalColumns.Count} признаков. Будут использованы все.",
+                            "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                // Создаем оценщик
+                var evaluator = new RegressionEvaluator(k: 5, testSize: 0.3);
+
+                // Все кодировщики
+                var encoders = new IColumnEncoder[]
+                {
+            new ColumnIntegerEncoder(),
+            new ColumnOneHotEncoder(),
+            new ColumnEntropyEncoder(),
+            new ColumnTargetEncoder(),
+            new ColumnCatBoostEncoder()
+                };
+
+                // Выполняем оценку
+                textBox1.Clear();
+                textBox1.Text = "Выполняется регрессионный анализ KNN (k=5)...\n\n";
+                Application.DoEvents();
+
+                var results = evaluator.EvaluateAll(encoders, categoricalColumns, targetValues, topFeatures);
+
+                // Выводим результаты
+                var sb = new StringBuilder();
+                sb.AppendLine("РЕЗУЛЬТАТЫ РЕГРЕССИИ KNN ДЛЯ РАЗНЫХ МЕТОДОВ КОДИРОВАНИЯ");
+                sb.AppendLine($"Датасет: {Path.GetFileName(CurrentFilePath)}");
+                sb.AppendLine($"Количество записей: {ProcessedData.Count}");
+                sb.AppendLine($"KNN параметры: k=5, test_size=30%");
+                sb.AppendLine($"Использовано признаков: {(topFeatures.HasValue ? topFeatures.Value : categoricalColumns.Count)} лучших");
+                sb.AppendLine();
+
+                sb.AppendLine($"{"Метод кодирования",-22} {"R² (качество)",12} {"MAE (Ср ошибка пред.)",12} {"RMSE (средняя величина ошибки пред.)",12} {"Время,мс",10}");
+
+                foreach (var result in results)
+                {
+                    sb.AppendLine($"{result.MethodName,-22} {result.R2Score,11:F3}  {result.MAE,10:F2}  {result.RMSE,10:F2}  {result.ExecutionTimeMs,8:F0}");
+                }
+
+                sb.AppendLine();
+                sb.AppendLine("ИСПОЛЬЗОВАННЫЕ ПРИЗНАКИ:");
+                sb.AppendLine();
+
+                var bestResult = results.First();
+                sb.AppendLine($"Лучший метод: {bestResult.MethodName}");
+                sb.AppendLine($"R² = {bestResult.R2Score:F3} ({(bestResult.R2Score * 100):F1}% дисперсии объяснено)");
+                sb.AppendLine($"Использованные признаки: {string.Join(", ", bestResult.UsedFeatures)}");
+                sb.AppendLine();
+                sb.AppendLine("ДЛЯ ВСЕХ МЕТОДОВ:");
+
+                foreach (var result in results)
+                {
+                    sb.AppendLine($"\n{result.MethodName}:");
+                    sb.AppendLine($"  Признаки: {string.Join(", ", result.UsedFeatures)}");
+                }
+
+
+                textBox1.Text = sb.ToString();
+
+                // Показываем график сравнения
+                ShowRegressionChart(results);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при выполнении регрессии: {ex.Message}\n\n{ex.StackTrace}",
+                    "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        /// <summary>
+        /// Показывает график сравнения результатов регрессии
+        /// </summary>
+        private void ShowRegressionChart(List<RegressionResult> results)
+        {
+            var chartForm = new Form
+            {
+                Text = "Сравнение методов кодирования (KNN Regression)",
+                Size = new Size(1000, 600),
+                StartPosition = FormStartPosition.CenterParent
+            };
+
+            var chart = new Chart
+            {
+                Dock = DockStyle.Fill
+            };
+            chart.ChartAreas.Add(new ChartArea());
+
+            // График R²
+            var r2Series = new Series
+            {
+                Name = "R² (коэффициент детерминации)",
+                ChartType = SeriesChartType.Column,
+                IsValueShownAsLabel = true,
+                LabelFormat = "F3",
+                Color = Color.SteelBlue
+            };
+
+            foreach (var result in results)
+            {
+                r2Series.Points.AddXY(result.MethodName, result.R2Score);
+            }
+
+            chart.Series.Add(r2Series);
+
+            chart.ChartAreas[0].AxisX.Title = "Методы кодирования";
+            chart.ChartAreas[0].AxisX.Interval = 1;
+            chart.ChartAreas[0].AxisY.Title = "Коэффициент детерминации R²";
+            chart.ChartAreas[0].AxisY.Minimum = 0;
+            chart.ChartAreas[0].AxisY.Maximum = 1;
+
+            chart.Titles.Clear();
+            chart.Titles.Add("Сравнение качества кодирования через KNN регрессию");
+
+            // Легенда
+            chart.Legends.Clear();
+            var legend = new Legend("Legend");
+            legend.Docking = Docking.Top;
+            chart.Legends.Add(legend);
+
+            chartForm.Controls.Add(chart);
+            chartForm.ShowDialog();
+        }
     }
+
 }

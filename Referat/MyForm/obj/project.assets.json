@@ -2337,11 +2337,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\grish\\Desktop\\учеба\\8 семестр\\Мальков Александр Анатольевич\\ReferatMalkov\\Referat\\MyForm\\MyForm.csproj",
+      "projectUniqueName": "C:\\Users\\grish\\OneDrive\\Рабочий стол\\учба\\8 семестр\\Мальков Александр\\ReferatMalkov\\Referat\\MyForm\\MyForm.csproj",
       "projectName": "MyForm",
-      "projectPath": "C:\\Users\\grish\\Desktop\\учеба\\8 семестр\\Мальков Александр Анатольевич\\ReferatMalkov\\Referat\\MyForm\\MyForm.csproj",
+      "projectPath": "C:\\Users\\grish\\OneDrive\\Рабочий стол\\учба\\8 семестр\\Мальков Александр\\ReferatMalkov\\Referat\\MyForm\\MyForm.csproj",
       "packagesPath": "C:\\Users\\grish\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\grish\\Desktop\\учеба\\8 семестр\\Мальков Александр Анатольевич\\ReferatMalkov\\Referat\\MyForm\\obj\\",
+      "outputPath": "C:\\Users\\grish\\OneDrive\\Рабочий стол\\учба\\8 семестр\\Мальков Александр\\ReferatMalkov\\Referat\\MyForm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2356,14 +2356,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\grish\\Desktop\\учеба\\8 семестр\\Мальков Александр Анатольевич\\ReferatMalkov\\Referat\\ClassLib\\ClassLib.csproj": {
-              "projectPath": "C:\\Users\\grish\\Desktop\\учеба\\8 семестр\\Мальков Александр Анатольевич\\ReferatMalkov\\Referat\\ClassLib\\ClassLib.csproj"
+            "C:\\Users\\grish\\OneDrive\\Рабочий стол\\учба\\8 семестр\\Мальков Александр\\ReferatMalkov\\Referat\\ClassLib\\ClassLib.csproj": {
+              "projectPath": "C:\\Users\\grish\\OneDrive\\Рабочий стол\\учба\\8 семестр\\Мальков Александр\\ReferatMalkov\\Referat\\ClassLib\\ClassLib.csproj"
             }
           }
         }
